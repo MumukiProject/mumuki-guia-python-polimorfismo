@@ -2,18 +2,18 @@ En los ejercicios anteriores, le habíamos incluido a `Pachorra` y `Emilce` un m
 
 Para estos casos, solemos utilizar una convención que se asemeja a la forma que se modifican los atributos desde el propio objeto, pudiendo ejecutar el siguiente código desde una consola:
 
-```ruby
+```python
 Emilce.ave = Pepita
 ```
 
 Esto se logra implementado el mensaje `ave=`, todo junto, como se ve a continuación:
 
-```ruby
+```python
 module Emilce
   def self.ave=(ave_nueva)
     @ave = ave_nueva
   end
-  
+
   def self.entrenar_ave!
     53.times { @ave.volar_en_circulos! }
     @ave.comer_alpiste!(8)

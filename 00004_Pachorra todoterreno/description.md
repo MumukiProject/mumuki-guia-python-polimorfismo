@@ -2,7 +2,7 @@ Como imaginabas, `Pachorra` puede entrenar cualquier tipo de aves, aunque para q
 
 Antes de empezar a entrenar, debe firmar un contrato con el ave. Esto, por ejemplo, lo haríamos de la siguiente manera:
 
-```ruby
+```python
 Pachorra.firmar_contrato!(Pepita)
 Pachorra.entrenar_ave! # acá entrena a Pepita
 Pachorra.firmar_contrato!(Pepo)

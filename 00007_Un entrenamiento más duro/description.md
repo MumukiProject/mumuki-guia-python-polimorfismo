@@ -1,6 +1,6 @@
 Analicemos el error:
 
-```ruby
+```python
 ム Pachorra.entrenar_ave!
 undefined method `hacer_lo_que_quiera!' for Norita:Module (NoMethodError)
 ```
@@ -9,7 +9,7 @@ En criollo, lo que dice ahí es que `Norita` no entiende el mensaje `hacer_lo_qu
 
 Miremos ahora el método `entrenar_ave!` de `Emilce`, una entrenadora un poco más estricta:
 
-```ruby
+```python
 module Emilce
   def self.entrenar_ave!
     53.times { @ave.volar_en_circulos! }

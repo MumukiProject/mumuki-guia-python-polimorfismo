@@ -2,7 +2,7 @@ Recordá que existen los operadores de comparación `<` y `>`, que sirven para v
 
 Por ejemplo:
 
-```ruby
+```python
 ム 130 < 20 * 10
 => true
 ム Semana.cantidad_de_dias > 5
