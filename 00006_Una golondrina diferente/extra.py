@@ -1,24 +1,23 @@
 module Pachorra
-    def self.firmar_contrato!(ave)
-        @ave = ave
-    end
-    
+    def self.firmar_contrato!(self, ave):
+        self.ave = ave
+
+
     def self.entrenar_ave!
-        10.times { @ave.volar_en_circulos! }
-        @ave.comer_alpiste! 30
-        5.times { @ave.volar_en_circulos! }
-        @ave.hacer_lo_que_quiera!
-    end
-end
+        10.times { self.ave.volar_en_circulos! }
+        self.ave.comer_alpiste! 30
+        5.times { self.ave.volar_en_circulos! }
+        self.ave.hacer_lo_que_quiera!
+
+
 
 module Norita
-  @energia = 500
+  self.energia = 500
 
   def self.volar_en_circulos!
-    @energia -= 30
-  end
-  
-  def self.comer_alpiste!(gramos)
-    @energia -= gramos
-  end  
-end
+    self.energia -= 30
+
+
+  def self.comer_alpiste!(self, gramos):
+    self.energia -= gramos
+

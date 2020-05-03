@@ -1,60 +1,60 @@
 module Eulogia
   def self.reiniciar!
-    @enojada = false
-  end
-end
+    self.enojada = False
+
+
 
 module Mendieta
   def self.reiniciar!
-    @ganas_de_hablar = 5
-  end
-end
+    self.ganas_de_hablar = 5
 
-context '' do
-  before(:each) do
+
+
+context '':
+  before(:each):
     Eulogia.reiniciar!
     Mendieta.reiniciar!
-  end
-  
-  describe 'Inodoro' do
-    it 'puede decirnos su cafeína en sangre' do
+
+
+  describe 'Inodoro':
+    it 'puede decirnos su cafeína en sangre':
       expect(Inodoro.cafeina_en_sangre).to eq 90
-    end
-    
-    it 'puede tomar mate con Eulogia' do
+
+
+    it 'puede tomar mate con Eulogia':
       Inodoro.compinche= Eulogia
       expect(Eulogia).to receive :recibir_mate!
       Inodoro.tomar_mate!
-    end
-    
-    it 'puede tomar mate con Mendieta' do
+
+
+    it 'puede tomar mate con Mendieta':
       Inodoro.compinche= Mendieta
       expect(Mendieta).to receive :recibir_mate!
       Inodoro.tomar_mate!
-    end  
-  end
-  
-  describe 'Eulogia' do
-    it 'puede decirnos si está enojada' do
-      expect(Eulogia.enojada).to be false
-    end
-    
-    it 'se enoja cuando recibe un mate de Inodoro' do
+
+
+
+  describe 'Eulogia':
+    it 'puede decirnos si está enojada':
+      expect(Eulogia.enojada).to be False
+
+
+    it 'se enoja cuando recibe un mate de Inodoro':
       Inodoro.compinche= Eulogia
       Inodoro.tomar_mate!
-      expect(Eulogia.enojada).to be true
-    end
-  end
-  
-  describe 'Mendieta' do
-    it 'puede decirnos cuántas ganas de hablar tiene' do
+      expect(Eulogia.enojada).to be True
+
+
+
+  describe 'Mendieta':
+    it 'puede decirnos cuántas ganas de hablar tiene':
       expect(Mendieta.ganas_de_hablar).to eq 5
-    end
-    
-    it 'deja de tener ganas de hablar cuando recibe un mate de Inodoro' do
+
+
+    it 'deja de tener ganas de hablar cuando recibe un mate de Inodoro':
       Inodoro.compinche= Mendieta
       Inodoro.tomar_mate!
       expect(Mendieta.ganas_de_hablar).to eq 0
-    end
-  end
-end
+
+
+

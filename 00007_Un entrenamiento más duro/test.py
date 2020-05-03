@@ -1,29 +1,28 @@
-describe '¿Norita' do
-  it 'puede entrenar con Pachorra?' do
-    expect(norita_puede_entrenar_con_pachorra).to be false
-  end
-  
-  it 'puede entrenar con Emilce?' do
-    expect(norita_puede_entrenar_con_emilce).to be true
-  end  
-end
+describe '¿Norita':
+  it 'puede entrenar con Pachorra?':
+    expect(norita_puede_entrenar_con_pachorra).to be False
 
-describe '¿Pepita' do
-  it 'puede entrenar con Pachorra?' do
-    expect(pepita_puede_entrenar_con_pachorra).to be true
-  end
-  
-  it 'puede entrenar con Emilce?' do
-    expect(pepita_puede_entrenar_con_emilce).to be true
-  end  
-end
 
-describe '¿Pepo' do
-  it 'puede entrenar con Pachorra?' do
-    expect(pepo_puede_entrenar_con_pachorra).to be true
-  end
-  
-  it 'puede entrenar con Emilce?' do
-    expect(pepo_puede_entrenar_con_emilce).to be true
-  end  
-end
+  it 'puede entrenar con Emilce?':
+    expect(norita_puede_entrenar_con_emilce).to be True
+
+
+
+describe '¿Pepita':
+  it 'puede entrenar con Pachorra?':
+    expect(pepita_puede_entrenar_con_pachorra).to be True
+
+
+  it 'puede entrenar con Emilce?':
+    expect(pepita_puede_entrenar_con_emilce).to be True
+
+
+
+describe '¿Pepo':
+  it 'puede entrenar con Pachorra?':
+    expect(pepo_puede_entrenar_con_pachorra).to be True
+
+
+  it 'puede entrenar con Emilce?':
+    expect(pepo_puede_entrenar_con_emilce).to be True
+

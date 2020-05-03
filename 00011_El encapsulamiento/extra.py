@@ -1,35 +1,34 @@
 module Pehuajo
-end
+
 
 module Malaquita
-end
+
 
 module Paris
-end
+
 
 module Manuelita
-  @energia = 100
-  @ciudad = Pehuajo
-  @mineral_preferido = Malaquita
-  @donde_va = Paris
-  
-  def self.energia
-    @energia
-  end
-  
-  def self.ciudad
-    @ciudad
-  end
-  
-  def self.mineral_preferido=(mineral)
-    @mineral_preferido = mineral
-  end
-  
-  def self.mineral_preferido
-    @mineral_preferido
-  end
-  
-  def self.donde_va=(ciudad)
-    @donde_va = ciudad
-  end
-end
+  self.energia = 100
+  self.ciudad = Pehuajo
+  self.mineral_preferido = Malaquita
+  self.donde_va = Paris
+
+  def self.energi(self):
+    self.energia
+
+
+  def self.ciuda(self):
+    self.ciudad
+
+
+  def self.mineral_preferido=(self, mineral):
+    self.mineral_preferido = mineral
+
+
+  def self.mineral_preferid(self):
+    self.mineral_preferido
+
+
+  def self.donde_va=(self, ciudad):
+    self.donde_va = ciudad
+

@@ -10,15 +10,15 @@ Esto se logra implementado el mensaje `ave=`, todo junto, como se ve a continuac
 
 ```python
 module Emilce
-  def self.ave=(ave_nueva)
-    @ave = ave_nueva
-  end
+  def self.ave=(self, ave_nueva):
+    self.ave = ave_nueva
+
 
   def self.entrenar_ave!
-    53.times { @ave.volar_en_circulos! }
-    @ave.comer_alpiste!(8)
-  end
-end
+    53.times { self.ave.volar_en_circulos! }
+    self.ave.comer_alpiste!(8)
+
+
 ```
 
 > ¿Te animás a cambiar el código de `Pachorra` para que siga esta convención?

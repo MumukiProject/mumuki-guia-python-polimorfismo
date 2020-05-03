@@ -4,21 +4,21 @@ En Python, como en muchos otros lenguajes, esto se escribe con la palabra reserv
 
 ```python
 module Puerta
-  @color = "madera"
+  self.color = "madera"
 
   def self.abrir!
     if self.cerrada_con_llave?
       self.forzar_cerradura!
     else
       self.girar_picaporte!
-    end
-  end
 
-  def self.pintar!(nuevo_color)
-    if @color == "madera"
-      @color = nuevo_color
-    end
-end
+
+
+  def self.pintar!(self, nuevo_color):
+    if self.color == "madera"
+      self.color = nuevo_color
+
+
 ```
 
 Sabiendo esto queremos que `Pepita`, además de recibir ordenes, tenga sus momentos para poder hacer lo que quiera.

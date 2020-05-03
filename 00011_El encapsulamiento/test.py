@@ -1,9 +1,8 @@
-describe 'Atributos' do
-  it 'con getter' do
+describe 'Atributos':
+  it 'con getter':
     expect(atributos_con_getter).to match_array ['energia', 'ciudad', 'mineral_preferido']
-  end
 
-  it 'con setter' do
+
+  it 'con setter':
     expect(atributos_con_setter).to match_array ['mineral_preferido', 'donde_va']
-  end
-end
+

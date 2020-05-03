@@ -1,61 +1,60 @@
 module Pepita
-  @energia = 1000
+  self.energia = 1000
 
-  def self.energia
-    @energia 
-  end
+  def self.energi(self):
+    self.energia
+
 
   def self.volar_en_circulos!
-    @energia -= 10
-  end
-  
-  def self.comer_alpiste!(gramos)
-    @energia += gramos * 15
-  end  
+    self.energia -= 10
+
+
+  def self.comer_alpiste!(self, gramos):
+    self.energia += gramos * 15
+
 
   def self.debil?
-    @energia < 100
-  end
-  
+    self.energia < 100
+
+
   def self.feliz?
-    @energia > 1000
-  end
-  
+    self.energia > 1000
+
+
   def self.hacer_lo_que_quiera!
     if self.debil?
       self.comer_alpiste!(10)
-    end
-    
+
+
     if self.feliz?
       5.times { self.volar_en_circulos! }
-    end
-  end  
-end
+
+
+
 
 module Pepo
-  @energia = 1000
+  self.energia = 1000
 
-  def self.energia
-    @energia 
-  end
+  def self.energi(self):
+    self.energia
+
 
   def self.volar_en_circulos!
     if self.pesado?
-      @energia -= 15
+      self.energia -= 15
     else
-      @energia -= 5
-    end
-  end
-  
-  def self.comer_alpiste!(gramos)
-    @energia += gramos / 2
-  end  
+      self.energia -= 5
+
+
+
+  def self.comer_alpiste!(self, gramos):
+    self.energia += gramos / 2
+
 
   def self.pesado?
-    @energia > 1100
-  end
-  
+    self.energia > 1100
+
+
   def self.hacer_lo_que_quiera!
     self.comer_alpiste!(120)
-  end  
-end
+

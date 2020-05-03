@@ -1,39 +1,38 @@
 module Pepo
-  def self.energia=(valor)
-    @energia = valor
-  end
-end
+  def self.energia=(self, valor):
+    self.energia = valor
 
-describe 'Pepo' do
+
+
+describe 'Pepo':
   before(:each) { Pepo.energia = 1000 }
-  
-  it 'existe' do
+
+  it 'existe':
     expect(Pepo).to be
-  end
-  
-  it 'gana 25 de energía cuando come 50 gramos de alpiste' do
+
+
+  it 'gana 25 de energía cuando come 50 gramos de alpiste':
     Pepo.comer_alpiste!(50)
     expect(Pepo.energia).to eq 1025
-  end
-  
-  it 'gana 30 de energía cuando come 60 gramos de alpiste' do
+
+
+  it 'gana 30 de energía cuando come 60 gramos de alpiste':
     Pepo.comer_alpiste!(60)
     expect(Pepo.energia).to eq 1030
-  end
-  
-  it 'gasta 15 de energía cuando vuela y está pesado' do
+
+
+  it 'gasta 15 de energía cuando vuela y está pesado':
     Pepo.energia = 1200
     Pepo.volar_en_circulos!
     expect(Pepo.energia).to eq 1185
-  end
-  
-  it 'gasta 5 de energía cuando vuela y no está pesado' do
+
+
+  it 'gasta 5 de energía cuando vuela y no está pesado':
     Pepo.volar_en_circulos!
     expect(Pepo.energia).to eq 995
-  end  
-  
-  it 'come 120 gramos de alpiste cuando hace lo que quiere' do
+
+
+  it 'come 120 gramos de alpiste cuando hace lo que quiere':
     Pepo.hacer_lo_que_quiera!
     expect(Pepo.energia).to eq 1060
-  end
-end
+

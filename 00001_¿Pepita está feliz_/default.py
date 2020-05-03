@@ -1,23 +1,22 @@
 module Pepita
-  @energia = 1000
+  self.energia = 1000
 
-  def self.energia
-    @energia 
-  end
+  def self.energi(self):
+    self.energia
+
 
   def self.volar_en_circulos!
-    @energia -= 10
-  end
-  
-  def self.comer_alpiste!(gramos)
-    @energia += gramos * 15
-  end  
+    self.energia -= 10
+
+
+  def self.comer_alpiste!(self, gramos):
+    self.energia += gramos * 15
+
 
   def self.debil?
     # completá acá...
-  end
-  
+
+
   def self.feliz?
     # completá acá...
-  end
-end
+

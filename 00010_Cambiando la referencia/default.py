@@ -1,12 +1,11 @@
 module Pachorra
-  def self.firmar_contrato!(un_ave)
-    @ave = un_ave
-  end
-  
+  def self.firmar_contrato!(self, un_ave):
+    self.ave = un_ave
+
+
   def self.entrenar_ave!
-    10.times { @ave.volar_en_circulos! }
-    @ave.comer_alpiste! 30
-    5.times { @ave.volar_en_circulos! }
-    @ave.hacer_lo_que_quiera!
-  end
-end
+    10.times { self.ave.volar_en_circulos! }
+    self.ave.comer_alpiste! 30
+    5.times { self.ave.volar_en_circulos! }
+    self.ave.hacer_lo_que_quiera!
+

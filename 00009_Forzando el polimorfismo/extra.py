@@ -1,23 +1,22 @@
 module Pachorra
-  def self.firmar_contrato!(ave)
-    @ave = ave
-  end
-  
+  def self.firmar_contrato!(self, ave):
+    self.ave = ave
+
+
   def self.entrenar_ave!
-    10.times { @ave.volar_en_circulos! }
-    @ave.comer_alpiste! 30
-    5.times { @ave.volar_en_circulos! }
-    @ave.hacer_lo_que_quiera!
-  end
-end
+    10.times { self.ave.volar_en_circulos! }
+    self.ave.comer_alpiste! 30
+    5.times { self.ave.volar_en_circulos! }
+    self.ave.hacer_lo_que_quiera!
+
+
 
 module Emilce
-  def self.firmar_contrato!(ave)
-    @ave = ave
-  end
-  
+  def self.firmar_contrato!(self, ave):
+    self.ave = ave
+
+
   def self.entrenar_ave!
-    53.times { @ave.volar_en_circulos! }
-    @ave.comer_alpiste!(8)
-  end
-end
+    53.times { self.ave.volar_en_circulos! }
+    self.ave.comer_alpiste!(8)
+

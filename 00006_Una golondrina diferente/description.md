@@ -2,16 +2,16 @@
 
 ```python
 module Norita
-  @energia = 500
+  self.energia = 500
 
   def self.volar_en_circulos!
-    @energia -= 30
-  end
+    self.energia -= 30
 
-  def self.comer_alpiste!(gramos)
-    @energia -= gramos
-  end
-end
+
+  def self.comer_alpiste!(self, gramos):
+    self.energia -= gramos
+
+
 ```
 
 Pero, ¿podrá entrenar con `Pachorra`? :open_mouth:

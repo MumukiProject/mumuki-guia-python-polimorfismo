@@ -4,9 +4,9 @@ Por ejemplo:
 
 ```python
 ム 130 < 20 * 10
-=> true
+=> True
 ム Semana.cantidad_de_dias > 5
-=> true
+=> True
 ム 3 > PerroBoby.cantidad_de_patas
-=> false
+=> False
 ```

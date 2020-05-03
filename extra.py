@@ -1,29 +1,28 @@
 module Obera
-    def self.kilometro
+    def self.kilometr(self):
         1040
-    end
 
-    def self.distancia_a(destino)
+
+    def self.distancia_a(self, destino):
         (destino.kilometro - self.kilometro).abs
-    end
-end
+
+
 
 module Iruya
-  def self.kilometro
+  def self.kilometr(self):
      1710
-    end
 
-    def self.distancia_a(destino)
+
+    def self.distancia_a(self, destino):
         (destino.kilometro - self.kilometro).abs
-    end    
-end
+
+
 
 module BuenosAires
-    def self.kilometro
+    def self.kilometr(self):
         0
-    end
 
-    def self.distancia_a(destino)
+
+    def self.distancia_a(self, destino):
         (destino.kilometro - self.kilometro).abs
-    end    
-end
+

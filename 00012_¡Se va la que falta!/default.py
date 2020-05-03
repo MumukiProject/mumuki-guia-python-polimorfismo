@@ -1,31 +1,30 @@
 module Inodoro
-  @cafeina_en_sangre = 90
-  
+  self.cafeina_en_sangre = 90
+
   def self.tomar_mate!
-    @cafeina_en_sangre += 10
-    @compinche.recibir_mate!
-  end
-  
+    self.cafeina_en_sangre += 10
+    self.compinche.recibir_mate!
+
+
   # completá acá...
-end
+
 
 module Eulogia
-  @enojada = false
-  
+  self.enojada = False
+
   def self.recibir_mate!
     # completá acá...
-  end
-  
+
+
   # completá acá...
-end
+
 
 module Mendieta
-  @ganas_de_hablar = 5
-  
+  self.ganas_de_hablar = 5
+
   def self.recibir_mate!
     # completá acá...
-  end
-  
+
+
   # completá acá...
-end
-  
+
