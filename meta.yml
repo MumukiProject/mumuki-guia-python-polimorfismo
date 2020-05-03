@@ -1,0 +1,22 @@
+---
+name: Polimorfismo y encapsulamiento
+locale: es
+type: learning
+beta: false
+teacher_info: ''
+language: ruby
+id_format: "%05d"
+order:
+- 1
+- 2
+- 5
+- 3
+- 4
+- 6
+- 7
+- 8
+- 9
+- 10
+- 11
+- 12
+private: false
